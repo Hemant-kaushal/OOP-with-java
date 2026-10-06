@@ -1,0 +1,34 @@
+//package G_Interface;
+//
+//interface Bicycle{
+//    int a = 45;
+//    void Break(int decrement);
+//    void Speed(int increment);
+//}
+//interface HornBicycle{
+//    void blowHorn4G();
+//    void blowHorn5G();
+//}
+//
+//class Avon implements Bicycle, HornBicycle{
+//
+//    public void Break(int decrement){
+//        System.out.println("Applying brak");
+//    }
+//    public Speed(int increment){
+//        System.out.println("Applying speed");
+//    }
+//    public blowHorn4G(){
+//        System.out.println("pee pee ");
+//    }
+//    public blowHorn5G(){
+//        System.out.println("poo poo");
+//    }
+//}
+//
+//public class Main {
+//    public static void  main(String[] args){
+//        Avon hemu = new Avon();
+//    }
+//
+//}

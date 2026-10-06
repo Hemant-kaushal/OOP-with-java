@@ -1,0 +1,47 @@
+package G_Interface;
+
+interface Camera2{
+    void TakeSnap();
+    void RecordVideo();
+}
+
+interface wifi2{
+    String[] getNetwork();
+    void ConnectToNetwork(String network);
+}
+
+class CellPhone2{
+    void CallNumber(int number){
+        System.out.println("Calling " +number);
+    }
+    void PickClal(){
+        System.out.println("Connecting...");
+    }
+}
+
+class SmartPhone2 extends CellPhone implements wifi, Camera{
+    public void TakeSnap(){
+        System.out.println("Takuing Snap ");
+    }
+    public void RecordVideo(){
+        System.out.println("Taking Video Snap");
+    }
+    public String[] getNetwork(){
+        System.out.println("Geting List Of Network");
+        String[] networkList = {"Jio5G", "airtel5G", "Vodaphone4G"};
+        return networkList;
+    }
+    public void ConnectToNetwork(String network){
+        System.out.println("Connect to " +network);
+    }
+}
+public class Polymorphism_Interface {
+    public static void main(String[] args){
+        Camera2 cam1 = new SmartPhone();
+
+        //cam1.getNetwork();     // NOt Allowed
+        cam1.RecordVideo();
+        }
+    }
+}
+
